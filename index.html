@@ -59,7 +59,7 @@
                         <h2 class="heading">Introduction</h2>
                         <div class="content">
                           <p>This is the second activity in the Contribute to GNOME Apps series. Do you want to start from the beginning? <a href="https://megford.github.io/teach-gnome-newcomer/">Check out the first activity</a> which will introduce you to choosing a GNOME app and the GNOME community.</p>
-                          <p>In this meeting participants will how to use GNOME's IDE, Builder, to build the code for the App they chose in the last meeting.</p>
+                          <p>In this meeting participants learn will how to use GNOME's IDE, <b>Builder</b>, to build the code for the App they chose in the last meeting.</p>
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </section><!--//section-->
@@ -73,11 +73,8 @@
                                 <p>To contribute to a project, it is first necessary to set up a development environment with the latest version. This will allow you to make changes, test them, and create patches. This tutorial describes how to do this using <a href="http://flatpak.org/">Flatpak</a> and an IDE called Builder. This is the recommended method for new contributors, and is the easiest way to get started.</p>
                                 <p>If you would prefer to use the command line or a different IDE, an <a href="https://gitlab.com/csoriano/flatpak-dev-cli">experimental developer command line tool</a> is available. It is also possible to use <a href="https://wiki.gnome.org/Newcomers/BuildSystemComponent">JHBuild</a>, GNOME's build tool for system components and apps that don't support Flatpak.</p>
                                 <p>Flatpak is a technology for installing and distributing applications. This tutorial requires Flatpak version 0.9.2, which is available in most distributions. Installing it is usually just a matter of installing the flatpak package.</p>
-
-                                <p>Note for Ubuntu users: Install a package called 'tracker', it will be necesary for most of the apps.</p>
-
-                                <p>Note: Once you install or update Flatpak, restart your system for it to work properly. Even if it seems to work, restart your system.</p>
-
+                                <p><i>Note for Ubuntu users: Install a package called 'tracker', it will be necesary for most of the apps.</i></p>
+                                <p>After you install or update Flatpak, restart your system so it will work properly. Even if it seems to work, restart your system.</p>
                                 <p>See the <a href="http://flatpak.org/getting.html">Flatpak</a> website for details on how to install it on a wide range of distributions.
                             </div><!--//item-->
                         </div><!--//content-->
@@ -92,8 +89,9 @@
                                 <p>Builder allows you to download and build GNOME applications. It uses Flatpak to compile and run your project in a sandbox. To get started, download Builder using the button below:</p>
                                 <a class="btn btn-cta-secondary fork" href="https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-builder.flatpakref?h=stable/">Download Builder</a>
                                 <p>Once Builder has been downloaded you can install it. If you have GNOME Software 3.22.7 or newer, you can just double click on the Builder flatpakref file. Otherwise, run the following in the terminal:</p>
-
-                                <p>flatpak install ~/Downloads/gnome-builder.flatpakref -y</p>
+                                <ul style="list-style-type:none">
+                                    <li>flatpak install ~/Downloads/gnome-builder.flatpakref -y</li>
+                                </ul>
                                 <p>Once it has been installed, Builder can be launched in the same way that you launch other applications. It's now time to build your project!</p>
                             </div><!--//item-->
                         </div><!--//content-->
@@ -107,18 +105,18 @@
                         <div class="content">
                             <div class="item">
                                 <p>Determine which Linux distribution your system is based on. See List of <a href="https://en.wikipedia.org/wiki/List_of_Linux_distributions">Linux distributions</a> on Wikipedia if you need help determining this.</p>
-
+                                <br>
                                 <h3 class="heading">Debian-based linux systems</h3>
                                 <p>Open a terminal. Copy and paste the following into the terminal window and hit Return. You may be prompted to enter your password.</p>
-                                <ul>
+                                <ul style="list-style-type:none">
                                     <li>sudo apt-get update</li>
                                     <li>sudo apt-get upgrade</li>
                                     <li>sudo apt-get install git</li>
                                 </ul>
-
+                                <br>
                                 <h3 class="heading">Red Hat-based linux systems</h3>
                                 <p>Open a terminal. Copy and paste the following into the terminal window and hit Return. You may be prompted to enter your password.</p>
-                                <ul>
+                                <ul style="list-style-type:none">
                                     <li>sudo yum upgrade</li>
                                     <li>sudo yum install git</li>
                                 </ul>
@@ -149,9 +147,7 @@
                                     </a>
                                     </div>
                                 <p>Note: You will need to close all instances of the app before running it from Builder.</p>
-
                                 <p>That's it! Now you have the project built and can run it.</p>
-                                <a class="btn btn-cta-secondary fork" href="https://github.com/mozillacampusclubs/teach-how-to-build-addons/issues/">Update your idea on GitHub</a>
                             </div><!--//item-->
                         </div><!--//content-->
                     </div><!--//section-inner-->
